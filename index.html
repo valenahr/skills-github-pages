@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Rastreo de Pedidos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #2563eb;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #1d4ed8;
+    }
+    .map, .notification {
+      text-align: center;
+    }
+    .icon {
+      font-size: 4rem;
+      color: #6b7280;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #f3f4f6;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    App de Rastreo de Pedidos
+  </header>
+
+  <!-- Login Section -->
+  <div class="container">
+    <div class="card">
+      <h2>Iniciar Sesión</h2>
+      <input type="email" class="input" placeholder="Correo Electrónico">
+      <input type="password" class="input" placeholder="Contraseña">
+      <button class="button">Entrar</button>
+    </div>
+  </div>
+
+  <!-- Main Content (Post-Login) -->
+  <div class="container">
+    <!-- Map Section -->
+    <div class="card map">
+      <div class="icon">📍</div>
+      <p>Mapa interactivo con la ubicación en tiempo real del pedido.</p>
+      <button class="button">Ver Pedido</button>
+    </div>
+
+    <!-- Notifications Section -->
+    <div class="card notification">
+      <div class="icon">🔔</div>
+      <h3>Notificación</h3>
+      <p>Tu pedido está en camino.</p>
+    </div>
+
+    <div class="card notification">
+      <div class="icon">📦</div>
+      <h3>Estado del Pedido</h3>
+      <p>Pedido entregado con éxito.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 App de Rastreo. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
